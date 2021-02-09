@@ -1,12 +1,8 @@
-import React from "react"
+import React from "react";
+import ReactDOM from "react-dom";
 
-function Header(props) {
-    return (
-        <header>
-            <img src={"http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png"} alt="Problem?"/>
-            <p>Meme Generator</p>
-        </header>
-    )
-}
+import TodoApp from "./todo-app/App";
+import MemeApp from "./App";
 
-export default Header
+ReactDOM.render(<MemeApp />, document.getElementById("root"));
+// ReactDOM.render(<MemeApp/>, document.getElementById("root"))
